@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Cu6DI/cjfyotfqFPCeBn5jjL3pDFDUnm4NujMRr+Xn8pE7YlzIA7GNv57xFW0EITYPm60xKFQDCZXhwCp0fr+Q==",
+  "dgSpecHash": "uOmGxZicsiDm+RDH0JvFXriaoXKRCvbdKzOwhoKE1xpZwJ9s9s8cZvX/ejgIaXeCyjboG1zYJ5pmqwyFIdig0Q==",
   "success": true,
   "projectFilePath": "/home/lijovijayan00/projects/dotNET/TodoAPI/TodoAPI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/lijovijayan00/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/lijovijayan00/.nuget/packages/microsoft.openapi/1.1.4/microsoft.openapi.1.1.4.nupkg.sha512",
+    "/home/lijovijayan00/.nuget/packages/swashbuckle.aspnetcore/5.5.0/swashbuckle.aspnetcore.5.5.0.nupkg.sha512",
+    "/home/lijovijayan00/.nuget/packages/swashbuckle.aspnetcore.swagger/5.5.0/swashbuckle.aspnetcore.swagger.5.5.0.nupkg.sha512",
+    "/home/lijovijayan00/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.5.0/swashbuckle.aspnetcore.swaggergen.5.5.0.nupkg.sha512",
+    "/home/lijovijayan00/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.5.0/swashbuckle.aspnetcore.swaggerui.5.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

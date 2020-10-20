@@ -18,3 +18,9 @@
 /home/lijovijayan00/projects/dotNET/TodoAPI/obj/Debug/netcoreapp3.1/TodoAPI.dll
 /home/lijovijayan00/projects/dotNET/TodoAPI/obj/Debug/netcoreapp3.1/TodoAPI.pdb
 /home/lijovijayan00/projects/dotNET/TodoAPI/obj/Debug/netcoreapp3.1/TodoAPI.genruntimeconfig.cache
+/home/lijovijayan00/projects/dotNET/TodoAPI/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
+/home/lijovijayan00/projects/dotNET/TodoAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+/home/lijovijayan00/projects/dotNET/TodoAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/lijovijayan00/projects/dotNET/TodoAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/lijovijayan00/projects/dotNET/TodoAPI/obj/Debug/netcoreapp3.1/TodoAPI.MvcApplicationPartsAssemblyInfo.cs
+/home/lijovijayan00/projects/dotNET/TodoAPI/obj/Debug/netcoreapp3.1/TodoAPI.csproj.CopyComplete
