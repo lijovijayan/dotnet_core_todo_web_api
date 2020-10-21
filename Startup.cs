@@ -37,6 +37,7 @@ namespace TodoAPI
                 app.UseDeveloperExceptionPage();
             }
             app.UseSwagger();
+            app.UseCors();
 
             app.UseSwaggerUI(c =>
             {
