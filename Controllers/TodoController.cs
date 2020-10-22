@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using TodoAPI.Data;
@@ -6,15 +5,24 @@ using TodoAPI.Models;
 
 namespace TodoAPI.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class TodoListController : ControllerBase
     {
+        private readonly TaskRepo _repository;
+        public TodoListController(TaskRepo repository) {
+            _repository = repository;
+        }
         // /api/TodoList
         [HttpGet]
-        public IEnumerable<Task> Get()
+        public ActionResult <IEnumerable<Task>> GetTaskResult()
         {
-            return new TaskRepo().GetTaskList();
+            return Ok(_repository.GetTaskList());
+        }
+        [HttpGet("{id}")]
+        public ActionResult<Task> GetTaskById(int id)
+        {
+            return Ok(_repository.GetTaskById(id));
         }
     }
 }

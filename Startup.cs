@@ -6,10 +6,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TodoAPI.Data;
 
 namespace TodoAPI
 {
@@ -25,7 +27,12 @@ namespace TodoAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<TaskContext>(opt => opt.UseSqlServer
+            (Configuration.GetConnectionString("TaskConnection")));
+            services.AddCors();
+            // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest);
             services.AddControllers();
+            services.AddScoped<ITaskRepo, TaskRepo>();
             services.AddSwaggerGen();
         }
 
@@ -37,8 +44,9 @@ namespace TodoAPI
                 app.UseDeveloperExceptionPage();
             }
             app.UseSwagger();
-            app.UseCors();
-
+            app.UseCors(
+                options => options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()
+            );
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
